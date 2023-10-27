@@ -12,7 +12,7 @@ async function executeJavaScriptFile(htmlFilePath, jsCode) {
   // Execute the JavaScript code
   const result = await page.evaluate(jsCode);
 
-  console.log('Result:', result);
+  console.log(result);
 
   await browser.close();
 }
@@ -20,7 +20,7 @@ async function executeJavaScriptFile(htmlFilePath, jsCode) {
 const args = process.argv.slice(2);
 
 if (args.length !== 2) {
-  console.error('Usage: node puppeteer-cli.js <HTML_FILE_PATH> "<JS_CODE>"');
+  console.error('Usage: node puppy.js <HTML_FILE_PATH> "<JS_CODE>"');
   process.exit(1);
 }
 
