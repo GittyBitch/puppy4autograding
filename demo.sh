@@ -1,3 +1,3 @@
 #!/bin/bash
-node puppy.js index.html "document.querySelector('title').textContent"
+node puppy.js index.html "document.querySelectorAll('header a').length"
 
